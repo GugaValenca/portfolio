@@ -1,3 +1,5 @@
+@import url('menu.css');
+
 * {
     margin: 0;
     padding: 0;
@@ -91,4 +93,85 @@ section {
     font-size: 2.5rem;
     margin-bottom: 15px;
     color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.resources .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    padding: 20px; 
+    text-align: center;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.cta {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+}
+
+.cta .button {
+    background-color: #fff;
+    color: #4caf50;
+}
+
+footer {
+    background-color: var(--color-primary-2);
+}
+
+.social-media-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.social-media-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: var(--color-neutral-0);
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--color-neutral-1);;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-buttons a:hover {
+    box-shadow: 0px 0px 10px 10px rgba(255, 255, 255, 0.1);
+    font-size: 28px;
+    transition: all .2s ease;
+}
+
+
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2% 10px 8%;
+    align-items: center;
+}
+
+#copyright {
+    color: var(--color-neutral-1);;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
